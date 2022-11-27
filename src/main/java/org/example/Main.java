@@ -43,13 +43,13 @@ public class Main {
             String password = new Scanner(System.in).nextLine();
 
             if (!new Login().checkPassword(actionsWithAccount, password)){
-                System.out.println("Wrong password, try again !");
+                System.out.println("Wrong password, try again !\n");
                 count++;
                 if (count == 3) {
                     data.remove(actionsWithAccount);
                     new BlockBankCards().setBlockCards(actionsWithAccount);
                     new WriteDataCards().writeCards();
-                    System.out.println("Attempts ended, the card is blocked !");
+                    System.out.println("Attempts ended, the card is blocked !\n");
                     inputNumberCard();
                 }
             }
@@ -61,15 +61,15 @@ public class Main {
 
     public static void chooseAction(ActionsWithAccount actionsWithAccount) throws IOException {
         int operationNumber = 0;
-        System.out.println("""
+        System.out.println("""\n
                 Select operation number:
                 1. Check balance
                 2. Withdraw money from the card
                 3. Put money on the card
-                4. Exit""");
+                4. Exit\n""");
         while(operationNumber < 1 || operationNumber > 4){
             operationNumber = new Scanner(System.in).nextInt();
-            if (operationNumber < 1 || operationNumber > 4) System.out.println("Please, input correct operation number");
+            if (operationNumber < 1 || operationNumber > 4) System.out.println("Please, input correct operation number\n");
         }
 
         switch (operationNumber){
