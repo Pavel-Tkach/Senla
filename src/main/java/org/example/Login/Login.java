@@ -11,7 +11,7 @@ public class Login {
                 return Main.data.get(i);
             }
         }
-        System.out.println("Wrong number card , try again !");
+        System.out.println("Wrong number card or your card has been blocked, try again !\n");
         return null;
     }
 
