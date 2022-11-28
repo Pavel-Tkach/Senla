@@ -1,6 +1,6 @@
-package org.example.Login;
+package org.example.login;
 
-import org.example.Actions.ActionsWithAccount;
+import org.example.actions.ActionsWithAccount;
 import org.example.Main;
 
 public class Login {

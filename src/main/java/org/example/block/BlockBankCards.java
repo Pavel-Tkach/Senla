@@ -1,19 +1,15 @@
-package org.example.Block;
+package org.example.block;
 
-import org.example.Actions.ActionsWithAccount;
+import org.example.actions.ActionsWithAccount;
 import org.example.Main;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
 
 public class BlockBankCards {
 
-    private ArrayList<ActionsWithAccount> blockCards = new ArrayList<>();
-
-    public ArrayList<ActionsWithAccount> getBlockCards() {
-        return blockCards;
-    }
+    private List<ActionsWithAccount> blockCards = new ArrayList<>();
 
     public void setBlockCards(ActionsWithAccount actionsWithAccount) {
         blockCards.add(actionsWithAccount);

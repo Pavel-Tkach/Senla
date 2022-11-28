@@ -1,20 +1,20 @@
 package org.example;
 
-import org.example.Actions.ActionsWithAccount;
-import org.example.Block.BlockBankCards;
-import org.example.DataCards.ReadDataCards;
-import org.example.DataCards.WriteDataCards;
-import org.example.Login.Login;
+import org.example.actions.ActionsWithAccount;
+import org.example.block.BlockBankCards;
+import org.example.data.cards.ReadDataCards;
+import org.example.data.cards.WriteDataCards;
+import org.example.login.Login;
 
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static int count = 0;
     public static boolean flag = true;
-    public static ArrayList<ActionsWithAccount> data = new ArrayList<>();
+    public static List<ActionsWithAccount> data = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
         new ReadDataCards().readCardData("Bank_card_data.txt");
@@ -36,7 +36,7 @@ public class Main {
         if (actionsWithAccount != null){
             inputPasswordAndCheck(actionsWithAccount);
 
-            if (data.contains(actionsWithAccount)){ //////
+            if (data.contains(actionsWithAccount)){
                 chooseAction(actionsWithAccount);
             }
         }

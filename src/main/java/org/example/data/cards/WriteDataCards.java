@@ -1,4 +1,4 @@
-package org.example.DataCards;
+package org.example.data.cards;
 
 import org.example.Main;
 
@@ -13,7 +13,6 @@ public class WriteDataCards {
             for (int i = 0; i < Main.data.size(); i++) {
                 bufferedWriter.write(Main.data.get(i).getPassword() + " " + Main.data.get(i).getNumberCard() + " " + Main.data.get(i).getSum() + "\n");
             }
-            bufferedWriter.close();
         }
         catch(IOException ex){
             System.out.println(ex.getMessage());

@@ -1,4 +1,4 @@
-package org.example.Actions;
+package org.example.actions;
 
 import org.example.ATM;
 import org.example.Main;
