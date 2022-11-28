@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e37bec58-642e-4c07-9ac3-3a02907c4e2a" name="Changes" comment="A bitchanges">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Block/BlockBankCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Block/BlockBankCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataCards/ReadDataCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataCards/ReadDataCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataCards/WriteDataCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataCards/WriteDataCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="e37bec58-642e-4c07-9ac3-3a02907c4e2a" name="Changes" comment="Last changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FieldData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/cards/ReadDataCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/cards/ReadDataCards.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
       <workItem from="1669453877273" duration="23250000" />
       <workItem from="1669576860900" duration="668000" />
       <workItem from="1669578183339" duration="103000" />
-      <workItem from="1669634958129" duration="4987000" />
+      <workItem from="1669634958129" duration="5671000" />
     </task>
     <task id="LOCAL-00001" summary="A bitchanges">
       <created>1669638630964</created>
@@ -91,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669638630964</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Last changes">
+      <created>1669641765999</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669641765999</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A bitchanges" />
-    <option name="LAST_COMMIT_MESSAGE" value="A bitchanges" />
+    <MESSAGE value="Last changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last changes" />
   </component>
 </project>

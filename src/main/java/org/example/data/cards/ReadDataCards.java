@@ -1,7 +1,6 @@
 package org.example.data.cards;
 
-import org.example.actions.ActionsWithAccount;
-import org.example.Main;
+import org.example.field.data.bank.cards.FieldData;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -14,7 +13,7 @@ public class ReadDataCards {
             String readableBankCardData;
             while((readableBankCardData=br.readLine()) != null){
                 String[] array = readableBankCardData.split(" ");
-                Main.data.add(new ActionsWithAccount(array[0], array[1], Integer.parseInt(array[2])));
+                FieldData.fieldData(array[0], array[1], Integer.parseInt(array[2]));
             }
         }
         catch (IOException e) {
