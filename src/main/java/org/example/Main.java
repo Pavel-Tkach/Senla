@@ -36,7 +36,7 @@ public class Main {
         if (actionsWithAccount != null){
             inputPasswordAndCheck(actionsWithAccount);
 
-            if (data.contains(actionsWithAccount)){ //////
+            if (data.contains(actionsWithAccount)){ 
                 chooseAction(actionsWithAccount);
             }
         }
