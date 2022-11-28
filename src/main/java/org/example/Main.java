@@ -7,6 +7,7 @@ import org.example.DataCards.WriteDataCards;
 import org.example.Login.Login;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -30,10 +31,14 @@ public class Main {
 
         ActionsWithAccount actionsWithAccount = new Login().findYourCard(numberCard);
 
+
+
         if (actionsWithAccount != null){
             inputPasswordAndCheck(actionsWithAccount);
 
-            chooseAction(actionsWithAccount);
+            if (data.contains(actionsWithAccount)){ //////
+                chooseAction(actionsWithAccount);
+            }
         }
     }
 
@@ -61,7 +66,7 @@ public class Main {
 
     public static void chooseAction(ActionsWithAccount actionsWithAccount) throws IOException {
         int operationNumber = 0;
-        System.out.println("""\n
+        System.out.println("""
                 Select operation number:
                 1. Check balance
                 2. Withdraw money from the card
